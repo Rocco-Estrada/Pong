@@ -11,6 +11,8 @@ public class ScoreKeeper : MonoBehaviour
     [SerializeField] private Goal leftGoal;
     [SerializeField] private Goal rightGoal;
 
+    private GameObject ball;
+
     [SerializeField] private GameManager gameManager;
 
 
@@ -20,15 +22,33 @@ public class ScoreKeeper : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        RefreshScore();
+        ball = GameObject.Find("Ball");
+        StartScore();
     }
 
-    private void RefreshScore()
+    private void StartScore()
     {
         leftTextScore.text = leftScore.ToString();
         rightTextScore.text = rightScore.ToString();
+        
     }
-    public void AddScore(Goal scoringSide)
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "Ball" && this.gameObject.name == "RightGoal")
+        {
+            leftScore++;
+            leftTextScore.text = leftScore.ToString();
+        }
+
+        if (other.gameObject.name == "Ball" && this.gameObject.name == "LeftGoal")
+        {
+            rightScore++;
+            rightTextScore.text = rightScore.ToString();
+        }
+        //RefreshScore();
+    }
+    /*public void AddScore(Goal scoringSide)
     {
         if (scoringSide == leftGoal)
         {
@@ -40,5 +60,6 @@ public class ScoreKeeper : MonoBehaviour
             leftScore += 1;
         }
         RefreshScore();
-    }
+    }*/
+
 }

@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
 
     public void Score(Goal goal)
     {
-        scoreKeeper.AddScore(goal);
+        //scoreKeeper.AddScore(goal);
         ball.Restart();
     }
 
