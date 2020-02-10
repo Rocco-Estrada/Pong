@@ -14,9 +14,9 @@ public class ScoreKeeper : MonoBehaviour
     [SerializeField] private GameManager gameManager;
 
 
-    private int leftScore = 0;
+    private int leftScore;
 
-    private int rightScore = 0;
+    private int rightScore;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +25,8 @@ public class ScoreKeeper : MonoBehaviour
 
     private void RefreshScore()
     {
-        //some function to update the Text string
+        leftTextScore.text = leftScore.ToString();
+        rightTextScore.text = rightScore.ToString();
     }
     public void AddScore(Goal scoringSide)
     {
