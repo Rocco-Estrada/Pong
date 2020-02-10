@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{60107C8A-E0C5-05C4-FF4D-19FF876FB432}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PowerUp.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Paddle.cs" Line="10" Column="1" />
+      <File FileName="Assets/Scripts/PowerUp.cs" Line="8" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Pong Part 2" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="PowerUp.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f9961e91-7d2e-4f84-a393-e6b4bc516c7c" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
